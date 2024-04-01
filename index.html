@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="img/montana.png" />
+    <title>Primera pagina</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script src="script/script.js" defer></script>
+  </head>
+  <body>
+
+    <button type="button" id="atras">&LeftArrow;</button>
+    <img src="img/caballo.jpg" alt="imagen carousel" width="250" height="250" id="imagen">
+    <button type="button" id="delante">&RightArrow;</button>
+
+    <br>
+
+    <button type="button" id="stop">Stop</button>
+
+    <button type="button" class="botonCirculo">1</button>
+    <button type="button" class="botonCirculo">2</button>
+    <button type="button" class="botonCirculo">3</button>
+    <button type="button" class="botonCirculo">4</button>
+
+    <!-- <div class="grid">
+      <div class="grid__item grid__item--primero">1</div>
+      <div class="grid__item">2</div>
+      <div class="grid__item">3</div>
+      <div class="grid__item">4</div>
+      <div class="grid__item">5</div>
+      <div class="grid__item">6</div>
+      <div class="grid__item">7</div>
+      <div class="grid__item">8</div>
+      <div class="grid__item">9</div>
+    </div> -->
+
+    <!--
+      Iframes
+
+      <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3170.273860209396!2d-5.9880824658843945!3d37.38335527433686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd126c394a7636c7%3A0x2d81bc33cd395f44!2sCEI%3A%20Centro%20de%20Estudios%20Innovaci%C3%B3n!5e0!3m2!1ses!2ses!4v1706606567642!5m2!1ses!2ses"
+      width="600"
+      height="450"
+      style="border: 0"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+
+        Formularios
+        <form action="#" method="post" name="formulario">
+          <label for="mpago">Metodo de Pago:</label>
+          <select name="metodo_pago" id="mpago">
+            <option value="efectivo">Efectivo</option>
+            <option value="tarjeta" selected>Tarjeta</option>
+            <option value="bono">Bono descuento</option>
+          </select>
+        </form>
+
+        Tablas
+
+        <table border="1">
+        <caption>Titulo de mi tabla</caption>
+        <tr>
+          <th>Cabecera 1</th>
+          <th>Cabecera 2</th>
+          <th>Cabecera 3</th>
+        </tr>
+        <tr>
+          <td rowspan="3">1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td colspan="2">4</td>
+          <td>5</td>
+          <td>6</td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>8</td>
+          <td>9</td>
+        </tr>
+      </table>
+
+        Carácteres Especiales
+        <a href="https://www.amazon.es/" target="_blank" title="Este es mi link"> Link </a>
+        targets:
+        _blank = Nueva pestaña o ventana
+        _self = En el mismo frame donde se clickó
+        _parent = En el marco primario
+        _top = En toda la ventana
+        &uacute; => ú
+        &oacute; => ó
+        &iacute; => í
+        &eacute; => é
+        &aacute; => á
+        &ntilde; => ñ
+        &lt; => Menor que
+        &gt; => Mayor que
+        &reg; => regulated
+        &copy; => copyright
+        &iquest; => Interrogacion abierta
+        &iexcl; => Exclamacion abierta
+        &quot; => Comillas "
+        &nbsp; => Espacio en blanco
+        Direccion
+        <p>Calle<address>Conde cifuentes</address></p>
+        Hora
+        <p>Son las <time>11:10</time></p>
+        Citas pequeñas
+        <p><q>El asesino mató a las víctimas con un rosco</q></p>
+        Énfasis
+        <p>Este texto <em>no</em> es importante</p>
+        Tachado
+        <p>Este texto <del>no</del> es importante</p>
+        Marcado
+        <p>Este texto es <mark>IMPORTANTE</mark></p>
+        Subindice
+        <p>6<sub>2</sub></p>
+        Superindice
+        <p>6<sup>2</sup></p>
+        Texto pequeño
+        <p>Hola me llamo <small>Javi</small></p>
+        Texto importante
+        <p>Hola me llamo <strong>Javi</strong></p>
+        Texto subrayado
+        <p>Hola me llamo <u>Javi</u></p>
+        Texto en cursiva
+        <p>Hola me llamo <i>Javi</i></p>
+        Texto en negrita
+        <p>Hola me llamo <b>Javi</b></p>
+        Titulos / cabeceras
+        <h1>Hola que tal</h1>
+        <h2>Hola que tal</h2>
+        <h3>Hola que tal</h3>
+        <h4>Hola que tal</h4>
+        <h5>Hola que tal</h5>
+        <h6>Hola que tal</h6>
+        
+        Salto de linea
+        <br>
+        Linea Horizontal 
+        <hr>
+        Etiqueta con formato del documento
+        <pre>Hola
+            Javi
+        </pre>
+        Etiqueta con tabulacion a la derecha
+        <blockquote>Mira donde estoy</blockquote>
+        Etiqueta parrafo    
+        <p>En un lugar de la mancha</p>
+        <p>De cuyo nombre no quiero acordarme</p> -->
+  </body>
+</html>
